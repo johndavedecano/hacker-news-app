@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@import "mixins";
+@import "variables";
+
+*,
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: $white;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.container {
+  width: 1200px;
+  max-width: 100%;
+  margin: auto;
+  background-color: $secondary-color;
+}
+
+.header {
+  background-color: $primary-color;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+}
+
+.spacer {
+  flex-grow: 1;
+}
+
+.brand {
+  font-weight: 500;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.login-link {
+  text-decoration: none;
+  font-size: small;
+  color: $text-color;
+  font-weight: 400;
+}
+
+.news-items {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.news {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.news-number {
+  font-size: small;
+  font-weight: 700;
+  color: $text-light-color;
+}
+
+.news-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-title {
+  font-size: small;
+  font-weight: 500;
+  color: $text-color;
+  text-decoration: none;
+}
+
+.news-title-url {
+  font-weight: normal;
+  font-size: x-small;
+  text-decoration: none;
+  color: $text-light-color;
+  text-decoration: none;
+}
+
+.news-meta {
+  font-size: x-small;
+  color: $text-light-color;
+}
+
+.news-meta a {
+  font-weight: normal;
+  font-size: x-small;
+  text-decoration: none;
+  color: $text-light-color;
+}
+
+.news-meta a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
