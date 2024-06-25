@@ -44,6 +44,8 @@ function createArticle(result, count) {
 
   const title = document.createElement("a");
   title.classList.add("news-title");
+  title.target = "_blank";
+  title.rel = "noreferrer noopener";
   title.href = result.url || "#";
 
   if (result.url) {
